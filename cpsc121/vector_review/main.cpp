@@ -4,16 +4,18 @@
 
 // Function to add a song to the playlist (pass by value)
 void addSong(std::vector<Song> playlist, Song newSong) {
-    playlist.push_back(newSong);
-    std::cout << "Added \"" << newSong.display() << "\" to the playlist.\n";
+    // TODO: Add the new song to the playlist
+
+
+    // TODO: Print a message saying the song was added
+
 }
 
 // Function to display the playlist (pass by reference)
 void displayPlaylist(const std::vector<Song>& playlist) {
-    std::cout << "Current Playlist:\n";
-    for (const Song& song : playlist) {
-        song.display();
-    }
+    // TODO: Loop over the playlist and display each song
+
+
 }
 
 int main() {
