@@ -3,7 +3,7 @@
 #include "Song.h"
 
 // Function to add a song to the playlist (pass by value)
-void addSong(std::vector<Song> playlist, Song newSong) {
+void addSong(std::vector<Song>& playlist, Song& newSong) {
     // TODO: Add the new song to the playlist
     playlist.push_back(newSong);
 
@@ -14,8 +14,10 @@ void addSong(std::vector<Song> playlist, Song newSong) {
 // Function to display the playlist (pass by reference)
 void displayPlaylist(const std::vector<Song>& playlist) {
     // TODO: Loop over the playlist and display each song
-    for (Song single_song : playlist) {
-        single_song.display();
+    std::cout << "\nCurrent Playlist:\n";
+
+    for (const Song& song : playlist) {
+        song.display();
     }
 
 }

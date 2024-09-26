@@ -1,24 +1,13 @@
 #!/bin/bash
 
-# Set the output file name
-OUTPUT="playlist"
+# Compile the program
+g++ -std=c++11 -Wall -o playlist_manager main.cpp Song.cpp
 
-# Compile the .cpp files into object files first
-g++ -c main.cpp -o main.o
-g++ -c Song.cpp -o Song.o
-
-# Link the object files into the final executable
-g++ main.o Song.o -o $OUTPUT
-
-# Check if the compilation and linking were successful
+# Check if compilation was successful
 if [ $? -eq 0 ]; then
-    echo "Compilation successful! Executable created: $OUTPUT"
-    
-    # Clean up the object files
-    rm main.o Song.o
-    echo "Cleaned up intermediate object files."
+  echo "Compilation successful, running the program..."
+  # Run the program
+  ./playlist_manager
 else
-    echo "Compilation failed!"
-
+  echo "Compilation failed."
 fi
-
