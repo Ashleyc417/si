@@ -11,10 +11,6 @@ public:
     // Method to display the song details
     void display() const;
 
-    std::string getTitle() const { return title_; }
-    std::string getArtist() const { return artist_; }
-    float getDuration() const { return duration_; }
-
 private:
     std::string title_;
     std::string artist_;
