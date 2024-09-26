@@ -16,7 +16,7 @@ void displayPlaylist(const std::vector<Song>& playlist) {
     // TODO: Loop over the playlist and display each song
     std::cout << "\nCurrent Playlist:\n";
 
-    for (const Song& song : playlist) {
+    for (Song song : playlist) {
         song.display();
     }
 
