@@ -15,9 +15,11 @@ mkdir -p templates-and-maps/prob1 templates-and-maps/prob2 && touch ./templates-
 4. Finally, run the command `code .` to open VSCode and get started on problem 1.
 
 <br/>
-
-**Good luck 🙂**
+<br/>
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/NwY5ppxLs_oAAAAd/kitten-keybo.gif">
+  <strong>Good Luck! 🙂</strong>
+  <br />
+  <br />
+  <img src="https://media1.tenor.com/m/NwY5ppxLs_oAAAAd/kitten-keybo.gif" alt="html" style="vertical-align:top; margin:4px">
 </p>
