@@ -1,4 +1,4 @@
-# Templates & Maps Coding Activity
+# 📑 Templates & Maps Coding Activity 🗺️ 
 
 Hey everyone, today we're going to be doing a coding activity to help y'all learn templates and maps in C++.
 
