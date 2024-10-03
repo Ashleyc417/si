@@ -19,5 +19,5 @@ mkdir -p templates-and-maps/prob1 templates-and-maps/prob2 && touch ./templates-
 **Good luck 🙂**
 
 <p align="center">
-  <img src="https://media1.tenor.com/m/NwY5ppxLs_oAAAAd/kitten-keybo.gif" alt="html" style="vertical-align:top; margin:4px">
+  <img src="https://media1.tenor.com/m/NwY5ppxLs_oAAAAd/kitten-keybo.gif">
 </p>
