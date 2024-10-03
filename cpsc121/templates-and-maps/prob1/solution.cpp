@@ -2,9 +2,14 @@
 template <typename T>
 
 T findMax(T a, T b) {
-    // TODO: Write a template function called `findMax` that takes two arguments of 
-    // any type (e.g., `int`, `double`, `char`) and returns the larger of the two.
+    // Compare a & b
+    // Then return the larger value
+    if (a > b) {
+        return a;
+    }
+    return b;
 }
+
 
 int main() {
     std::cout << "findMax(5, 10) = " << findMax(5, 10) << "\n";             // Test with integers
@@ -12,3 +17,4 @@ int main() {
     std::cout << "findMax(a, b) = " << findMax('a', 'b') << "\n";           // Test with characters
     return 0;
 }
+

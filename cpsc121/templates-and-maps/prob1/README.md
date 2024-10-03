@@ -12,9 +12,9 @@ Write a template function called `findMax` that takes two arguments of any type 
 1. Define a template function `findMax` that works with any data type.
 2. The function should compare the two values and return the larger one.
 3. Test the function with:
-   - Two integers (e.g., `5` and `10`)
-   - Two doubles (e.g., `3.14` and `1.59`)
-   - Two characters (e.g., `'a'` and `'b'`)
+   - Two integers (ex: `5` and `10`)
+   - Two doubles (ex:, `3.14` and `1.59`)
+   - Two characters (ex:, `'a'` and `'b'`)
 
 **Expected Output:**
 
