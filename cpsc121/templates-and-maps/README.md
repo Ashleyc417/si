@@ -10,6 +10,10 @@ mkdir -p templates-and-maps/prob1 templates-and-maps/prob2 && touch ./templates-
 
 2. Then, run the command `ls` to list your files and directories.
 
-3. Use `cd <directory_name>` to change directories into `templates-and-maps`
+3. Use `cd <directory_name>` to change directories into `templates-and-maps`.
   
-4. Finally, run the command `code .` to open VSCode and get started on problem 1. Good luck 🙂
+4. Finally, run the command `code .` to open VSCode and get started on problem 1.
+
+<br/>
+
+**Good luck 🙂**
