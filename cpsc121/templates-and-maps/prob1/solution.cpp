@@ -10,8 +10,6 @@ T findMax(T a, T b) {
     return b;
 }
 
-
-
 int main() {
     std::cout << "findMax(5, 10) = " << findMax(5, 10) << std::endl;             // Test with integers
     std::cout << "findMax(3.14, 1.59) = " << findMax(3.14, 1.59) << std::endl;   // Test with doubles
