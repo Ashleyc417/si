@@ -1,5 +1,6 @@
 import sys
 import os
+import pyperclip
 
 from rich import print
 from pathlib import Path
@@ -92,8 +93,9 @@ class FileTree:
         for i in range(len(self.entries)):
             file: FileEntry = self.entries[i]
             if file.activated and file.entry_type == 'file':
-                out_file = str(file.extension) + "/" + file.link.name
-                cmds.add(f'mkdir -p {file.extension}')
+                path = "/".join(str(file.extension).split("/")[:-1])
+                out_file = path + '/' + file.link.name
+                cmds.add(f'mkdir -p {path}')
                 cmds.add(f'touch {out_file}')
                 cmds.add(f'curl --remote-name-all {file.repo_link} -o {out_file}')
         order: list[str] = ['mkdir', 'touch', 'curl']
@@ -128,7 +130,18 @@ def main():
             choice = input(prompt)
         else:
             print('\nGenerating curl command...')
-            print('\n' + ft.make_curl())
+            out = ft.make_curl()
+            output_file = Path(__file__).parent / 'output_cmd.txt'
+            if output_file.exists():
+                output_file.unlink()
+            with open(output_file, 'w') as f:
+                f.write(out)
+            print(f'Command saved to {output_file}')
+            try:
+                pyperclip.copy(out)
+                print('Command copied to clipboard')
+            except:
+                print('Could not copy command to clipboard')
             exit(0)
 
 if __name__ == '__main__':
