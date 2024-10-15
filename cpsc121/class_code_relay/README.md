@@ -109,16 +109,4 @@ Price: $3.5
 - **Display Function**:
   - `displayBagel()`: Prints all the bagel details in a friendly, readable format.
 
-## Contributing
 
-Feel free to open issues or submit pull requests if you'd like to contribute to this project. All contributions are welcome!
-
----
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This `README.md` will give students and other developers a clear understanding of the project structure, how to compile and run the code, and how the class is designed. It also encourages contributions, should anyone want to improve or extend the project.
