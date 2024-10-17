@@ -15,10 +15,10 @@ class Item {
     void SetItemName(std::string item_name);
     void SetPrice(double price);
 
-    // displayItem will print out the Item. 
-    // For example:
-    // Item Name: Bouncy Ball
-    // Price: $ 1.00
+  // displayItem will print out the Item. 
+  // For example:
+  // Item: Bouncy Ball
+  // Price: $ 1.00
     void displayItem();
 
   private:
