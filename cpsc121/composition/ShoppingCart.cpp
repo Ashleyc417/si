@@ -18,19 +18,19 @@ class ShoppingCart {
 
     // displayShoppingCart will print the contents of a single instance of
     // a Shopping cart including the customer and their items.
+    // (Hint: Try using the displayItem function for each Item)
     // Ex.
     // ----------------------------------------------
     // Ashley's Shopping Cart:
     // ----------------------------------------------
-    // Item 1: Bouncy Ball              
+    // Item: Bouncy Ball              
     // Price: $1.00
     //
-    // Item 2: Flower Lego Set          
+    // Item: Flower Lego Set          
     // Price: $50.00
     //
-    // Item 3: Yogurt                   
+    // Item: Yogurt                   
     // Price: $1.50
-    
     void displayShoppingCart();
 
   private:

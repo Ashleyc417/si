@@ -9,18 +9,20 @@ class Item {
     Item(const std::string &item_name, double price) {}
     Item(const Item &other) {}
     
-    // Getters & Setters (Accessors & Mutators)
-    // TODO: Implement all of these
-    std::string GetItemName() {}
-    double GetPrice() {}
-    void SetItemName(std::string item_name) {}
-    void SetPrice(double price) {}
-
-    // displayItem will print out the Item. 
-    // For example:
-    // Item Name: Bouncy Ball
-    // Price: $ 1.00
-    void displayItem() {}
+  // Getters & Setters (Accessors & Mutators)
+  // TODO: Implement all of these
+  std::string GetItemName() {}
+  double GetPrice() {}
+  void SetItemName(std::string item_name) {}
+  void SetPrice(double price) {}
+ 
+  // displayItem will print out the Item. 
+  // TODO: Implement the displayItem function.
+  //
+  // For example:
+  // Item: Bouncy Ball
+  // Price: $ 1.00
+  void displayItem() {}
 
   private:
     std::string item_name_;
