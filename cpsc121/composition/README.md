@@ -10,13 +10,13 @@
 <br/>
 
 ## TODO's:
-- Create the `Item` class in `Item.cpp`
+- Create the `Item` class in `Item.cpp.
 - Create the `ShopppingCart` class in `ShoppingCart.cpp`
 
 <br/>
 
 ## Run Your Code
-1. Compile using `clang++ main.cpp Item.cpp Shopping.cpp` into an executable file.
+1. Compile using `clang++ main.cpp Item.cpp ShoppingCart.cpp` into an executable file.
 2. Run the executable file using `./a.out`
 
 <br/>
