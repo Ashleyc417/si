@@ -13,7 +13,7 @@ class ShoppingCart {
 
     // Getters & Setters (Accessors & Mutators)
     std::string GetCustomerName();
-    std::string GetItems();
+    std::vector<Item> GetItems();
     void SetCustomerName(std::string customer_name);
     void SetItems(const std::vector<Item> items);
 
