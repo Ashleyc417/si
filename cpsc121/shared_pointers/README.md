@@ -1,11 +1,12 @@
-## 📋 (Make) Shared To-Do List 📋
+# 📋 (Make) Shared To-Do List 📋
 
 ## Objective
 This activity demonstrates how to use `std::shared_ptr` to manage shared ownership of an object in C++. The goal is to help students understand reference counting, shared ownership, and dereferencing with `shared_ptr`.
 
 ## Instructions
 1. Start by running the following command:
-> ```mkdir shared_pointers && cd shared_pointers && curl --remote-name-all https://github.com/Ashleyc417/si/tree/main/cpsc121/shared_pointers/{main.cpp,run.sh,README.md}
+```bash
+mkdir shared_pointers && cd shared_pointers && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/tree/main/cpsc121/shared_pointers/{main.cpp,run.sh,README.md}
 ```
 
 2. Then, run `code .` to open VSCode.
