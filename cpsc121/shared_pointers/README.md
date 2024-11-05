@@ -6,7 +6,7 @@ This activity demonstrates how to use `std::shared_ptr` to manage shared ownersh
 ## Instructions
 1. Start by running the following command:
 ```bash
-mkdir shared_pointers && cd shared_pointers && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/tree/main/cpsc121/shared_pointers/{main.cpp,run.sh,README.md}
+mkdir shared_pointers && cd shared_pointers && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/main/cpsc121/shared_pointers/{main.cpp,run.sh,README.md}
 ```
 
 2. Then, run `code .` to open VSCode.
