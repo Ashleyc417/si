@@ -1,4 +1,5 @@
 # 📋 (Make) Shared To-Do List 📋
+ha ha...see what i did there 😆🤓
 
 ## Objective
 This activity demonstrates how to use `std::shared_ptr` to manage shared ownership of an object in C++. The goal is to help students understand reference counting, shared ownership, and dereferencing with `shared_ptr`.
