@@ -9,12 +9,12 @@ void printTargetScore(std::map<std::string, int> studentScores, std::string targ
   bool found = false;
 
 	for (it = studentScores.begin(); it != studentScores.end(); it++) {
-    	if (it->first == target) {
-		    // Remember to dereference then call the method 
-        std::cout << it->first << "’s score: " << it->second << std::endl;
-        found = true;
-        break;
-    	}
+		if (it->first == target) {
+			// Remember to dereference then call the method 
+			std::cout << it->first << "’s score: " << it->second << std::endl;
+			found = true;
+			break;
+		}
 	}
 
 	if (!found) {
