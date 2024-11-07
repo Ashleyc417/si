@@ -1,6 +1,7 @@
 # Iterators 
 Iterators in C++ are objects that allow you to access each element of a container (e.g., std::vector, std::map). They are especially useful when iterating through data structures that aren't stored contiguously in memory, for example, Linked Lists (which you will see later in CPSC 131).
 
+<br/>
 
 ## Instructions
 1. Download the project files:
@@ -8,18 +9,23 @@ Iterators in C++ are objects that allow you to access each element of a containe
    ```bash
    mkdir iterators && cd iterators && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/main/cpsc121/iterators/{main.cpp,run.sh,README.md} 
    ```
-cpsc121/iterators
+
+
 2. Complete the TODOs in `main.cpp`
+
+
 3. Run the testing suite script:
    > Note: You will only have to run `chmod +x run.sh` once!
    ```bash
    chmod +x run.sh
    ./run.sh
    ```
+   > This script will compile the `main.cpp` file using either `clang++` or `g++` (depending on availability). If compilation is successful, it will run the testing suite to verify the functionality.
 
-This script will compile the `main.cpp` file using either `clang++` or `g++` (depending on availability). If compilation is successful, it will run the testing suite to verify the functionality.
 
 4. Review the test results:
+
+<br/>
 
 ## Expected Output
 ```
