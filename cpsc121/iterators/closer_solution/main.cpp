@@ -35,7 +35,7 @@ int main() {
 	
 	// Find and print the target’s output
 	printTargetScore(studentScores, "Charlie");
-  printTargetScore(studentScores, "Ashley");
+ 	printTargetScore(studentScores, "Ashley");
 	return 0;
 
 }
