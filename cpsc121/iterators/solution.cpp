@@ -9,7 +9,7 @@
 // ---------------------------------------------------------------------------------------------------------
 void displayAndCountWord(std::vector<std::string> words, std::string target) {
   // TODO: Use an iterator to display each word in the vector.
-  // TODO: Count how many times the word "dream" appears in the vector and display the count.
+  // TODO: Count how many times the "target" word appears in the vector and display the count.
   // Add your code below
 
   // Keep track of count
@@ -17,7 +17,7 @@ void displayAndCountWord(std::vector<std::string> words, std::string target) {
   std::cout << "Words in the vector: ";
 
   // Go through vector using an iterator
-  for (std::vector<std::string>::iterator it = words.begin(); it != words.end(); ++it) {
+  for (std::vector<std::string>::iterator it = words.begin(); it != words.end(); it++) {
       std::cout << *it << " ";
       
       // If the iterator is pointing to "dream", add to the count
@@ -36,10 +36,11 @@ void findAndDisplayMapKeys(std::map<std::string, int> wordCount, int threshold) 
   // TODO: Use an iterator to find and display all keys in the map that have a value greater than the threshold.
   // TODO: Only display keys that meet the threshold condition to reinforce iterator comparison logic.
   // Add your code below
+
   std::cout << "\nWords with frequency greater than " << threshold << ":\n";
-  
-  for (std::map<std::string, int>::const_iterator it = wordCount.begin(); it != wordCount.end(); ++it) {
-      
+
+  for (std::map<std::string, int>::iterator it = wordCount.begin(); it != wordCount.end(); ++it) {
+      // If the value is greater than the threshold, print the key and value
       if (it->second > threshold) {
           std::cout << it->first << ": " << it->second << std::endl;
       }
@@ -61,7 +62,8 @@ void replaceOrInsertValue(std::vector<int> numbers, int targetValue, int newValu
         // Target found; replace it with newValue
         numbers.erase(it);
         numbers.insert(it, newValue);
-    } else {
+    } 
+    else {
         // Target not found; insert newValue at the beginning
         numbers.insert(numbers.begin(), newValue);
     }
@@ -90,7 +92,7 @@ int main() {
         std::cout << num << " ";
     }
     std::cout << std::endl;
-    
+
     return 0;
 }
 
