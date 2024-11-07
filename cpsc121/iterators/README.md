@@ -6,8 +6,9 @@ Iterators in C++ are objects that allow you to access each element of a containe
 1. Download the project files:
 
    ```bash
-   mkdir 2d && cd 2d && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/cpsc121/iterators/{main.cpp,run.sh,README.md} 
+   mkdir iterators && cd iterators && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/main/cpsc121/iterators/{main.cpp,run.sh,README.md} 
    ```
+cpsc121/iterators
 2. Complete the TODOs (implement the functions `printEverySecondWord` and `wordExists` in `main.cpp`).
 3. Run the testing suite script:
    > Note: You will only have to run `chmod +x run.sh` once!
