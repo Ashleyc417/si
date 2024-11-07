@@ -9,7 +9,7 @@ Iterators in C++ are objects that allow you to access each element of a containe
    mkdir iterators && cd iterators && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/main/cpsc121/iterators/{main.cpp,run.sh,README.md} 
    ```
 cpsc121/iterators
-2. Complete the TODOs (implement the functions `printEverySecondWord` and `wordExists` in `main.cpp`).
+2. Complete the TODOs in `main.cpp`
 3. Run the testing suite script:
    > Note: You will only have to run `chmod +x run.sh` once!
    ```bash
@@ -23,17 +23,11 @@ This script will compile the `main.cpp` file using either `clang++` or `g++` (de
 
 ## Expected Output
 ```
-Printing every second word:
-Learning
-to
-use
-iterators
-in
-C++
-is
-fun
+Words in the vector: I just woke up from a dream and I feel alive 
+The word 'dream' appears 1 time(s).
 
-Checking if certain words exist:
-The word 'iterators' exists in the list.
-The word 'hello' does not exist in the list.
+Words with frequency greater than 1:
+I: 2
+
+Modified vector: 1 2 10 4 5 
 ```

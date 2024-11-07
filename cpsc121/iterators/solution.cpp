@@ -1,59 +1,98 @@
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
+#include <map>
+#include <algorithm>   // For std::find
 
-// printWords is a function that will print every word in a vector
-void printWords(std::vector<std::string> words) {
-  // TODO: Using an iterator named "it", print all of the words in the "words"
+// ---------------------------------------------------------------------------------------------------------
+// TASK 1: Complete displayAndCountWords
+// ---------------------------------------------------------------------------------------------------------
+void displayAndCountWord(std::vector<std::string> words, std::string target) {
+  // TODO: Use an iterator to display each word in the vector.
+  // TODO: Count how many times the word "dream" appears in the vector and display the count.
+  // Add your code below
 
-  for (std::vector<std::string>::iterator it = words.begin(); it != words.end(); it++) {
-    // Dereference the iterator it to print out the actual value
-    std::cout << *it << std::endl;
+  // Keep track of count
+  int count = 0;
+  std::cout << "Words in the vector: ";
+
+  // Go through vector using an iterator
+  for (std::vector<std::string>::iterator it = words.begin(); it != words.end(); ++it) {
+      std::cout << *it << " ";
+      
+      // If the iterator is pointing to "dream", add to the count
+      if (*it == target) {
+          ++count;
+      }
+  }
+  std::cout << "\nThe word " << target << " appears " << count << " time(s)." << std::endl;
+
+}
+
+// ---------------------------------------------------------------------------------------------------------
+// TASK 2: Complete findAndDisplayMapKeys
+// ---------------------------------------------------------------------------------------------------------
+void findAndDisplayMapKeys(std::map<std::string, int> wordCount, int threshold) {
+  // TODO: Use an iterator to find and display all keys in the map that have a value greater than the threshold.
+  // TODO: Only display keys that meet the threshold condition to reinforce iterator comparison logic.
+  // Add your code below
+  std::cout << "\nWords with frequency greater than " << threshold << ":\n";
+  
+  for (std::map<std::string, int>::const_iterator it = wordCount.begin(); it != wordCount.end(); ++it) {
+      
+      if (it->second > threshold) {
+          std::cout << it->first << ": " << it->second << std::endl;
+      }
   }
 
 }
 
-
-
-// wordExists is a function that checks if a target word exists in the vector of words
-bool wordExists(std::vector<std::string> words, std::string target) {
-  // TODO: Fill in the function logic using iterators to return true if the target is 
-  // found and false otherwise.
-
-  // Create an iterator to store each element in the words vector
-  std::vector<std::string>::iterator it;
-
-  for (it = words.begin(); it != words.end(); it++) {
-    // Check if the current element is the target
-    if (*it == target) {
-      return true;
+// ---------------------------------------------------------------------------------------------------------
+// TASK 3: Complete replaceOrInsertValue
+// ---------------------------------------------------------------------------------------------------------
+void replaceOrInsertValue(std::vector<int> numbers, int targetValue, int newValue) {
+    // TODO: Use std::find to locate the targetValue in the vector.
+    // TODO: If found, replace targetValue with newValue using erase and insert.
+    // TODO: If not found, insert newValue at the beginning of the vector.
+    // Add your code below
+    std::vector<int>::iterator it = std::find(numbers.begin(), numbers.end(), targetValue);
+    
+    if (it != numbers.end()) {
+        // Target found; replace it with newValue
+        numbers.erase(it);
+        numbers.insert(it, newValue);
+    } else {
+        // Target not found; insert newValue at the beginning
+        numbers.insert(numbers.begin(), newValue);
     }
-  }
 
-  return false; // Target not found
 }
 
 
 
 
 int main() {
-    std::vector<std::string> words = {"Learning", "to", "use", "iterators", "in", "C++", "is", "fun"};
+    // Test vector function
+    std::vector<std::string> lyrics = {"I", "just", "woke", "up", "from", "a", "dream", "and", "I", "feel", "alive"};
+    displayAndCountWord(lyrics, "dream");
 
-    std::cout << "Printing every second word:\n";
-    printWords(words);
+    // Test map function
+    std::map<std::string, int> wordFrequency = {{"I", 2}, {"just", 1}, {"woke", 1}, {"up", 1}, {"dream", 1}};
+    findAndDisplayMapKeys(wordFrequency, 1);
 
-    std::cout << "\nChecking if certain words exist:\n";
-    if (wordExists(words, "iterators")) {
-        std::cout << "The word 'iterators' exists in the list." << std::endl;
-    } else {
-        std::cout << "The word 'iterators' does not exist in the list." << std::endl;
+    // Test iterator parameter function
+    std::vector<int> numbers = {1, 2, 3, 4, 5};
+    replaceOrInsertValue(numbers, 3, 10);
+    
+    // Display modified vector
+    std::cout << "\nModified vector: ";
+    for (int num : numbers) {
+        std::cout << num << " ";
     }
-
-    if (wordExists(words, "hello")) {
-        std::cout << "The word 'hello' exists in the list." << std::endl;
-    } else {
-        std::cout << "The word 'hello' does not exist in the list." << std::endl;
-    }
-
+    std::cout << std::endl;
+    
     return 0;
 }
+
+
+
