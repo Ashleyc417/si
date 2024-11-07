@@ -3,6 +3,14 @@ Iterators in C++ are objects that allow you to access each element of a containe
 
 <br/>
 
+<div align="center">
+   <div style="overflow: hidden;">
+      <img src="https://scaler.com/topics/images/array-of-5-elements.gif" style="width: auto; height: 250px; margin-top: -15px; margin-bottom: -50px">
+   </div>
+</div>
+
+<br/>
+
 ## Instructions
 1. Download the project files:
 
