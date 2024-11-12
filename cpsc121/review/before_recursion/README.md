@@ -1,4 +1,4 @@
-# Fill in the Code(ing) Activity: DisneyPark Edition!
+# Fill in the Code(ing) Activity: 🏰DisneyPark Edition🏰!
 Before the session ends, lets help finish creating the DisneyPark and Visitor class!
 
 ## Instructions
