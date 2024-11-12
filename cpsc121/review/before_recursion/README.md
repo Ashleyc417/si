@@ -4,7 +4,7 @@ Before the session ends, lets help finish creating the DisneyPark and Visitor cl
 ## Instructions
 1. Start by running the following command:
 ```bash
-mkdir shared_pointers && cd shared_pointers && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/main/cpsc121/review/before_recursion/{main.cpp,run.sh,README.md}
+mkdir review_11/12 && cd review_11/12 && curl --remote-name-all https://raw.githubusercontent.com/Ashleyc417/si/main/cpsc121/review/before_recursion/{main.cpp,run.sh,README.md}
 ```
 
 2. Then, run `code .` to open VSCode.
