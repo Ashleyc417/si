@@ -1,4 +1,4 @@
-# 😵‍💫 Recursion 😵‍💫
+# Recursion 😵‍💫
 Let's practice recursion given a family line you have to print out!
 <br/>
 
