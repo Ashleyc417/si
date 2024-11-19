@@ -1,17 +1,27 @@
-# Sum of Digits
+# Problem 2: Recursive Friend Search
 
-Write a recursive function that calculates the sum of the digits of a given integer `n`.
+## Problem Statement
+Design a `Friend` class that represents a binary tree node, where each node stores:
+- A friend's name (`std::string`)
+- A friend's age (`int`)
+- Left and right child pointers (`std::shared_ptr<Friend>`)
 
+Write a recursive function `int FindAge(const std::string& name)` to find the age of a friend by their name. If the friend is not found in the tree, return `-1`.
 
-## Objective:
-The function should recursively break down the number by extracting the last digit and adding it to the sum of the remaining digits.
+### Example
+Input tree:
+```
+        Chelsy (23)
+       /          \
+Ashley (20)    Destiny (22)
+```
 
-For example:
-- `sumOfDigits(123) = 1 + 2 + 3 = 6`
-- `sumOfDigits(456) = 4 + 5 + 6 = 15`
-
-
-## Test Case:
-
-int result = sumOfDigits(123);  
-std::cout << result << std::endl;  // Output: 6
+## Expected Output
+```
+Age of Ashley: 20
+Expected: 20
+Age of Destiny: 22
+Expected: 22
+Age of David: -1
+Expected: -1
+```

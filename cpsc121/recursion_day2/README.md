@@ -1,5 +1,6 @@
-# Recursion
-In today's coding activity we'll be practicing recursion. There will be three problems for y'all to get through.
+# Review & Recursion
+In today's coding activity we'll be practicing some leetcode type questions along with recursion again. 
+There will be three problems for y'all to get through.
 
 ## Instructions
 1. Start by running the following command:

@@ -1,28 +1,32 @@
 #include <iostream>
+#include <vector>
+#include <string>
 
-// Function to calculate factorial using recursion
-// This function calculates the factorial of a number n
-// If n is 0, it returns 1 (base case).
-// Otherwise, it returns n * factorial(n - 1).
-int factorial(int n) {
-    // TODO: Fill in the function logic
-    // (Hint: Remember in recursion you need a 
-    //   1. base case and a 
-    //   2. recursive case)
+
+// Given a list of strings, findMostFrequentChar will return the most frequently used character across all strings.
+// If there is a tie, return the lexicographically smallest character.
+char findMostFrequentChar(const std::vector<std::string>& strings) {
+  // TODO: Fill in the function body
+    
 
 
 }
 
-
 int main() {
-    // Test cases for the factorial function
-    int num1 = 5;
-    int num2 = 3;
-    int num3 = 0;
+  // Test case 1
+  std::vector<std::string> strings1 = {"apple", "banana", "apricot"};
+  char result1 = findMostFrequentChar(strings1);
+  std::cout << "Most frequent character in test case 1: " << result1 << " (expected: 'a')" << std::endl;
 
-    std::cout << "Factorial of " << num1 << " is: " << factorial(num1) << std::endl;  // Expected: 120
-    std::cout << "Factorial of " << num2 << " is: " << factorial(num2) << std::endl;  // Expected: 6
-    std::cout << "Factorial of " << num3 << " is: " << factorial(num3) << std::endl;  // Expected: 1
+  // Test case 2
+  std::vector<std::string> strings2 = {"xyz", "xxyyzz", "zyx"};
+  char result2 = findMostFrequentChar(strings2);
+  std::cout << "Most frequent character in test case 2: " << result2 << " (expected: 'x')" << std::endl;
 
-    return 0;
+  // Test case 3
+  std::vector<std::string> strings3 = {"hello", "world", "leetcode"};
+  char result3 = findMostFrequentChar(strings3);
+  std::cout << "Most frequent character in test case 3: " << result3 << " (expected: 'l')" << std::endl;
+
+  return 0;
 }
