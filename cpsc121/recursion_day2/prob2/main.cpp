@@ -30,7 +30,7 @@ int main() {
 
     // Print the tree structure
     std::cout << "Tree Structure:" << std::endl;
-    std::cout << "        Chelsy (23" << std::endl;
+    std::cout << "        Chelsy (23)" << std::endl;
     std::cout << "       /         \\" << std::endl;
     std::cout << "Ashley (20)   Destiny (22)\n" << std::endl;
 
