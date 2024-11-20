@@ -22,7 +22,7 @@ char findMostFrequentChar(const std::vector<std::string>& strings) {
     char mostFrequentChar = ' ';
     int maxFrequency = 0;
     for (std::pair<char, int> entry : frequencyMap) {
-        if (entry.second > maxFrequency) {
+        if (entry.second > maxFrequency && entry.first < mostFrequentChar) {
             mostFrequentChar = entry.first;
             maxFrequency = entry.second;
         }
