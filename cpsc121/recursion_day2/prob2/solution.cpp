@@ -19,10 +19,9 @@ public:
             if (name < name_ && left_ != nullptr) {
                 return left_->FindAge(name);
             }
-            // Recursive case: search in the right subtree if the name is greater.
-            if (name > name_ && right_ != nullptr) {
-                return right_->FindAge(name);
-            }   
+            else if (right_ != nullptr) { 
+              return right_->FindAge(name);
+            } 
         }
 
         // If no match is found, return -1.
