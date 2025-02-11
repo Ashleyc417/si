@@ -4,29 +4,44 @@ class Point {
 public:
     // Constructor
     Point(double x, double y) : x_(x), y_(y) {}
-		
-    // TODO: Implement operator overloading functions
+    
+    // ========================================================================
+		// TODO: Fill in this functions below
+    // ========================================================================
+    // This `+` function overload should add two points together.
     Point operator+(const Point& other) const {
       return Point(this->x_ + other.x_, this->y_ + other.y_);
     }
 
+    // This `-` function overload should subtract one point from another.
     Point operator-(const Point& other) const {
       return Point(this->x_ - other.x_, this->y_ - other.y_);
     }
 
-    bool operator==(const Point& other) const {
+    // This `*` function overload should multiply a point by a scalar value.
+    Point operator*(const int scalar) const {
+      return Point(this->x_ * scalar, this->y_ * scalar);
+    }
+    
+    // This `==` function overload should check whether two points are equal or not.
+    bool operator==(const Point& other) const { 
       return (this->x_ == other.x_) && (this->y_ == other.y_);
     }
 
-    Point operator=(const Point& other) {
-      this->x_ = other.x_;
-      this->y_ = other.y_;
+    // This `=` function overload should assign the current point the same values as 
+    // the other point.
+    Point& operator=(const Point& other) {
+      // Prevent self-assignment
+      if (this != &other) {
+        this->x_ = other.x_;
+        this->y_ = other.y_;
+      }
       return *this;
     }
 
     // Print function implementation 
 		void print() const {
-		    std::cout << "(" << x_ << ", " << y_ << ")" << std::endl;
+		    std::cout << "(" << this->x_ << ", " << this->y_ << ")" << std::endl;
 		}
 
 private:
@@ -40,25 +55,36 @@ int main() {
     Point p1(3.0, 4.0);
     Point p2(1.5, -2.0);
 
-    // Test addition
-    // Expected Output: (4.5, 2.0)
+    // TODO: Test addition
+    // Expected Output: 
+    // Sum: (4.5, 2.0)
     Point sum = p1 + p2;
     std::cout << "Sum: ";
     sum.print();
 
-    // Test subtraction
-    // Expected Output: (1.5, 6.0)
+    // TODO: Test subtraction
+    // Expected Output:
+    // Difference: (1.5, 6.0)
     Point diff = p1 - p2;
     std::cout << "Difference: ";
     diff.print();  
 
-    // Test equality
-    // Expected Output: True
+    // TODO: Test equality
+    // Expected Output:
+    // p1 == p3: True
     Point p3(3.0, 4.0);
-    std::cout << "p1 == p3: " << (p1 == p3 ? "True" : "False") << std::endl;  
+    if (p1 == p3) {
+      std::cout << "p1 == p3: True" << std::endl;
+    }
+    else {
+      std::cout << "p1 == 3: False" << std::endl;
+    }
+    // could also use:
+    // std::cout << "p1 == p3: " << (p1 == p3 ? "True" : "False") << std::endl;  
 
-    // Test assignment
-    // Expected Output: (3.0, 4.0)
+    // TODO: Test assignment
+    // Expected Output:
+    // After assignment, p4: (3.0, 4.0)
     Point p4(0.0, 0.0);
     p4 = p1;
     std::cout << "After assignment, p4: ";
