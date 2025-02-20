@@ -32,10 +32,8 @@ public:
     // the other point.
     Point& operator=(const Point& other) {
       // Prevent self-assignment
-      if (this != &other) {
-        this->x_ = other.x_;
-        this->y_ = other.y_;
-      }
+      this->x_ = other.x_;
+      this->y_ = other.y_;
       return *this;
     }
 
