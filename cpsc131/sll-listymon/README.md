@@ -16,7 +16,7 @@ This repository contains a simple coding practive for using Singly-Linked Lists.
 
 2. Complete the TODOs:
 
-3. Compile using:
+3. Compile/Run using:
    ```bash
    clang++ main.cpp
    ./a.out
