@@ -11,7 +11,7 @@ This repository contains a simple coding practive for using Singly-Linked Lists.
 1. Download the project files:
 
    ```bash
-   mkdir pointers && cd pointers && curl --remote-name-all https://raw.githubusercontent.com/ashleyc417/si/main/cpsc131/sll-listymon/{main.cpp,,README.md} 
+   mkdir sll-listymon && cd sll-listymon && curl --remote-name-all https://raw.githubusercontent.com/ashleyc417/si/main/cpsc131/sll-listymon/{main.cpp,README.md} 
    ```
 
 2. Complete the TODOs in `main.cpp`.
