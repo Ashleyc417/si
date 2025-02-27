@@ -25,8 +25,6 @@ This repository contains a simple coding practive for using Singly-Linked Lists.
 4. Review the test results:
    After running the script, you will see the output of the testing suite.
 
-
-<br/>
 <br/>
 
 ## Expected Output
