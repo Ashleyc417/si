@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <forward_list>
-#include <algorithm>
 
 class Pokemon {
  public:
@@ -58,7 +57,6 @@ int main() {
 
   // =================================================================================================
   // TO-DO (🚧): Erase the Pokemon named "Venasaur" from the list using erase_after;
-  // END DOES NOT HAVE A NAME ATTRIBUTE -> CRASHES PROGARM
   // =================================================================================================
 
 

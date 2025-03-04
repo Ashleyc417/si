@@ -42,10 +42,9 @@ Name: Blastoise, Type: Water
 Name: Charizard, Type: Fire
 Name: Ditto, Type: Normal
 Name: Pikachu, Type: Electric
-Found with a loop: 
+Found with a loop:
 Name: Charizard, Type: Fire
-Found without a loop!
-Name: Charizard, Type: Fire
+
 Now Counting the Number of Pokemon
 Pokemon #1: Mewtwo
 Pokemon #2: Blastoise
