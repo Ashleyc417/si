@@ -35,22 +35,22 @@ Let's practice recursion given a family line you have to print out!
 <br/>
 
 ## Family Line
-The youngest child is Mark and his father is Pillow. Pillow's father is Joel and his grandpa is Paul.
+The youngest child is Iroh and his father is Zuko. Iroh's grandfather is Fire Lord Ozai and his great-grandfather is Fire Lord Azulon.
 This can be represented as shown below:
 ```
-           paul
+          Azulon
              |
-           joel
+           Ozai 
              |
-          pillow
+           Zuko
              |
-            mark
+           Iroh
 ```
 
 ## Expected Output
 ```
-mark is the child of pillow
-pillow is the child of joel
-joel is the child of paul
-paul is the Ancestor
+Iroh is the child of Zuko.
+Zuko is the child of Ozai.
+Ozai is the child of Azulon.
+Azulon is the Ancestor
 ```

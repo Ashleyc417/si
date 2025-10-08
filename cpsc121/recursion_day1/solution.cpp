@@ -26,19 +26,19 @@ public:
 
 int main() {
     // Create the family tree
-    Person* paul = new Person("paul", nullptr);
-    Person* joel = new Person("joel", paul);
-    Person* pillow = new Person("pillow", joel);
-    Person* mark = new Person("mark", pillow);
+    Person* azulon = new Person("parent", nullptr);
+    Person* ozai = new Person("ozai", azulon);
+    Person* zuko = new Person("zuko", ozai);
+    Person* iroh = new Person("iroh", zuko);
 
     // Print the ancestors of "Child2"
-    mark->PrintAncestors();
+    iroh->PrintAncestors();
 
     // Clean up memory (for simplicity, not necessary in small-scale programs)
-    delete paul;
-    delete joel;
-    delete pillow;
-    delete mark;
+    delete azulon;
+    delete ozai;
+    delete zuko;
+    delete iroh;
 
     return 0;
 }
