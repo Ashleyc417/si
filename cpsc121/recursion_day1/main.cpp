@@ -21,10 +21,10 @@ public:
 
 int main() {
     // Create the family tree
-    Person* azulon = new Person("parent", nullptr);
-    Person* ozai = new Person("ozai", azulon);
-    Person* zuko = new Person("zuko", ozai);
-    Person* iroh = new Person("iroh", zuko);
+    Person* azulon = new Person("Azulon", nullptr);
+    Person* ozai = new Person("Ozai", azulon);
+    Person* zuko = new Person("Zuko", ozai);
+    Person* iroh = new Person("Iroh", zuko);
 
     // Print the ancestors of "Child2"
     iroh->PrintAncestors();
